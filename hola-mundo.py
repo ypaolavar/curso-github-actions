@@ -2,7 +2,7 @@ import os
 
 
 def main():
-    nombre = os.getenv("USERNAME")
+    nombre = Paola
     print(f"¡Hola, {nombre} desde GitHub!")
 
 
