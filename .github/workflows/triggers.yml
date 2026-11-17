@@ -7,11 +7,11 @@ on:
     - cron: '15 22 * * *'
 
 jobs:
-  trigger exercice
+  hola-mundo-manual:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: action/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: name definition
         run: echo "USERNAME=${{ inputs.nombre}}" >> $GITHUB_ENV
       - name: python script
