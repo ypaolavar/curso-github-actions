@@ -1,2 +1,4 @@
 name: Expresiones
 run-name: ¡Estoy aprendiendo a usar Expresiones!
+on: 
+  push:
