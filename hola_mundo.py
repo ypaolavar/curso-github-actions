@@ -2,7 +2,7 @@ import os
 
 
 def main():
-    nombre = Paola
+    nombre = "Paola"
     print(f"¡Hola, {nombre} desde GitHub!")
 
 
