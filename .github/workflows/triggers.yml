@@ -1,5 +1,5 @@
-name : triggers
-run-name : execution
+name: Triggers
+run-name: ¡Estoy aprendiendo a usar diferentes Triggers!
 on: 
   pull-request
     branches:
