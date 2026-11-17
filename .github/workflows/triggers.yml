@@ -13,4 +13,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: python script
-        run: hola_mundo.py
+        run: python hola_mundo.py
