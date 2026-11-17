@@ -1,0 +1,20 @@
+name : triggers
+run-name : execution
+on: 
+  pull-request
+    branches:
+      - main
+  issues:
+  schedule:
+    - cron: '15 22 * * *'
+
+jobs:
+  triggers-exercice
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: action/checkout@v3
+      - name: name definition
+        run: echo "USERNAME=${{ inputs.nombre}}" >> $GITHUB_ENV
+      - name: python script
+        run: hola-mundo.py
