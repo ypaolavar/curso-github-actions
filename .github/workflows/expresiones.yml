@@ -5,9 +5,9 @@ on:
   workflow_dispatch
 
 jobs:
-  Use expressions:
+  use-expressions:
     runs-on: ubuntu-latest
     steps:
-      -name: condition
-        if: ${{(on == push) || (on == workflow_dispatch)}}
-        run: python hola_mundo.py
+      - name: condition
+          if: ${{(github.event-name == 'push') || (github.event-name == 'workflow_dispatch')}}
+          run: python hola_mundo.py
