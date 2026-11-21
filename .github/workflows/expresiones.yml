@@ -1,8 +1,8 @@
 name: Expresiones
 run-name: ¡Estoy aprendiendo a usar Expresiones!
 on: 
-  push
-  workflow_dispatch
+  push:
+  workflow_dispatch:
 
 jobs:
   use-expressions:
