@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: condition
-          if: ${{(github.event-name == 'push') || (github.event-name == 'workflow_dispatch')}}
-          run: python hola_mundo.py
+        if: ${{(github.event_name == 'push') || (github.event_name == 'workflow_dispatch')}}
+        run: python hola_mundo.py
