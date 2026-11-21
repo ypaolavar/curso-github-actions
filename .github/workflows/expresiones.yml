@@ -8,6 +8,8 @@ jobs:
   use-expressions:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: action/checkout@v3
       - name: condition
         if: ${{(github.event_name == 'push') || (github.event_name == 'workflow_dispatch')}}
-        run: ../python hola_mundo.py
+        run: python hola_mundo.py
