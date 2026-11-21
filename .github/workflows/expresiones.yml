@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: condition
         if: ${{(github.event_name == 'push') || (github.event_name == 'workflow_dispatch')}}
-        run: python hola_mundo.py
+        run: ../python hola_mundo.py
