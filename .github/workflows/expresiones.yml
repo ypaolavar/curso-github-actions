@@ -1,4 +1,13 @@
 name: Expresiones
 run-name: ¡Estoy aprendiendo a usar Expresiones!
 on: 
-  pus
+  push
+  workflow_dispatch
+
+jobs:
+  Use expressions:
+    runs-on: ubuntu-latest
+    steps:
+      -name: condition
+        if: ${{(on == push) || (on == workflow_dispatch)}}
+        run: python hola_mundo.py
